@@ -2,13 +2,12 @@ import { Outlet } from "react-router-dom";
 import { usePageTitle } from "../../hooks/usePageTitle";
 import SubNav from "../../layouts/components/SubNav";
 
-export default function DiscoverLayout() {
-  usePageTitle("Discover");
+export default function SoloLayout() {
+  usePageTitle("Solo");
 
   const subNavItems = [
-    { name: "Subpage", path: "/discover" },
-    { name: "Subpage 2", path: "/discover/subpage2" },
-    { name: "Subpage 3", path: "/discover/subpage3" },
+    { name: "Portfolio", path: "/solo" },
+    { name: "Global Leaderboard", path: "/solo/global-leaderboard" },
   ];
 
   return (
